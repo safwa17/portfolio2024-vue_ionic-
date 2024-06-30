@@ -1,0 +1,73 @@
+INSERT INTO contact_info (type, detail) VALUES
+('Email', 'safwadjelabi@gmail.com'),
+('LinkedIn', 'nkedin.com/in/safwa-djelabi-7bb859254/'),
+('GitHub', 'https://github.com/safwa17');
+
+
+INSERT INTO experience (title, company, start_date, end_date, description)
+VALUES
+('Stage - Développement Web', 'Association “Les Déesses Edjo”', 'Avril 2024', 'Juin 2024', 'Refonte du site internet complet de l''association en utilisant le CMS Wordpress.');
+
+DELETE FROM experience WHERE id = '1'
+
+
+INSERT INTO projects (title, type, description, image, github_link, demo_link, technologies)
+VALUES
+('Application PHP - Twig', 'Application Web','Base de données relationnel et moteur de template.', NULL, NULL, NULL, NULL),
+('Site visualisation de données', 'Site internet','Utilisation d''une API pour la visualisation des données.', NULL, NULL, NULL, NULL),
+('Application Mobile', 'Application Mobile','Développement avec React Native, API Rest, Laravel.', NULL, NULL, NULL, NULL);
+
+
+INSERT INTO technologies (name)
+VALUES
+('VS Code'),
+('Ionic'),
+('Bootstrap'),
+('Wordpress'),
+('Laravel'),
+('Flask'),
+('JS'),
+('React'),
+('React Native'),
+('Figma'),
+('Android Studio');
+
+INSERT INTO skills (name, level)
+VALUES
+('Bootstrap', 'Intermediate'),
+('Wordpress', 'Advanced');
+
+
+INSERT INTO project_technologies (project_id, technology_id)
+VALUES
+(4, 5),  
+(4, 5),  
+(4, 1),
+(5, 1),
+(5, 7),
+(5, 10),
+(5, 3),
+(6, 1),
+(6, 9),
+(6, 10),
+(6, 11);
+
+
+
+technologies
+1|VS Code
+2|Ionic
+3|Bootstrap
+4|Wordpress
+5|Laravel
+6|Flask
+7|JS
+8|React
+9|React Native
+10|Figma
+11|Android Studio
+
+projects
+4|Application PHP - Twig
+5|Site visualisation de données
+6|Application Mobile
